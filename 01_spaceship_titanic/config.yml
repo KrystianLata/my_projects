@@ -1,0 +1,44 @@
+MAIN_CONFIG: 
+  PROJECT_NAME: 'KAGGLE_SPACESHIP_TITANIC'
+  VERSION: 0.2.8
+  RANDOM_STATE: 42
+  H2O_MAX_MODELS: 20
+  H2O_MAX_RUNTIME: 1200
+
+
+PREPROCESS_CONFIG:
+  COLUMNS_LIST: [
+    "HomePlanet",
+    "CryoSleep",
+    "Destination",
+    "Age",
+    "VIP",
+    "RoomService",
+    "FoodCourt",
+    "ShoppingMall",
+    "Spa",
+    "VRDeck",
+    "GroupNum",
+    "GroupSize",
+    "CabinDeck",
+    "CabinNum",
+    "CabinSide",
+    "Alone",
+    "WithFamily"
+    ]
+  ENCODING: 'none' #  one-hot / none
+  COLUMNS_TO_ENCODE: [
+    # "HomePlanet",
+    # "Destination",
+    # "CabinDeck",
+    # "CabinSide",
+    # "GroupNum",
+    # "CabinNum"
+    ]
+  SERVICES_BINS: None
+  SCALING_METHOD: 'none' #  minmax / standard / none
+  CRYOSLEEP_FROM_SERVICES: False
+  SERVICES_FROM_CRYOSLEEP : False
+  VIP_FROM_AGE_TRESHOLD : 18
+
+
